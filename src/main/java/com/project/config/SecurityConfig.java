@@ -26,7 +26,7 @@ import com.project.security.MyUserDetailService;
 @EnableMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
 
-	 public static final String[] PUBLIC_URLS = {"/api/user/auth/login", "/v3/api-docs", "/v2/api-docs",
+	 public static final String[] PUBLIC_URLS = {"/api/user/auth/login", "/v3/api-docs/**", "/v2/api-docs/**",
 	            "/swagger-resources/**", "/swagger-ui/**","/webjars/**","/api/user/register"
 
 	    };
